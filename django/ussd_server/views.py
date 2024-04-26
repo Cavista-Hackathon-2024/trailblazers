@@ -27,13 +27,6 @@ def index(request):
     phone_number = request.POST.get('phoneNumber')
     text = request.POST.get('text')
     print(text, type(text))
-    
-    # if text_response == '':
-    #   text=''
-    # else:
-    #   text = last_response(text_response)
-    #   print(text, type(text))
-  
 
     response = ""
     if text == "":
