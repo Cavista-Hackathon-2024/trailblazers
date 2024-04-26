@@ -1,18 +1,18 @@
+import { useState } from "react";
 import "./App.css";
-import usericon from './assets/images/user icon.png';
-
+import ChatScreen  from "./components/chatscreen";
+import Selection from "./components/Selection";
 function App() {
+  const [chats,setChats] = useState([])
   return (
-    <main className="bg-green">
-      <div className="text-5xl"> Hello Sumaya, Go to App.jsx to edit the page</div>
-    <p className="text-4xl text-green-600 font-medium">hello! just wanted to test  this if it works</p>
-    <img src={usericon} alt="usericon" />
-    <form action="">
-      <label htmlFor="">FirstName:
-      <input className="flex-1 p-2 rounded-1-lg bg-green-300 border-blue-500 border-4 rounded-2xl" type="text" name="fName" placeholder="please type something here"  />
-      <button href='hi.com'>helllo</button>
-      </label>
-    </form>
+    <main className="bg-white-100 py-4 ">
+      <section>
+        <div className="text-2xl text-center font-bold pb-2 border-grey-500 border-b-2">
+          E-Health
+        </div>
+      </section>
+      {chats.length == 0 ? <Selection chats={chats} setChats={setChats} /> : <ChatScreen chats={chats} /> }
+
     </main>
   );
 }
