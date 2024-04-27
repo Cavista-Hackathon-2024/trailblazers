@@ -1,0 +1,36 @@
+.letter-head{
+    display: flex;
+    justify-content: space-between;
+}
+.letter-head p{
+
+        font-size: small;
+        margin: 3px 0;
+    
+}
+.purple-multicolor{
+    height: 30em;
+    width: 25px;
+    background-color: #6f64a2;
+}
+.yellow-multicolor{
+    height: 30em;
+    width: 25px;
+    background-color: #fefda2;
+}
+.green-multicolor{
+    height: 30em;
+    width: 25px;
+    background-color: #51a897;
+}
+.multi-color{
+    display: flex;
+    padding-right: 10px;
+}
+.body{
+    display: flex;
+    padding-top: 10px;
+}
+body{
+    padding: 5px 20px;
+}
