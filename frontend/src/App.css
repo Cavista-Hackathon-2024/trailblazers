@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .left-container{
+        @apply relative flex-[30%] bg-[#fff]
+    }
+
+    .right-container{
+        @apply relative flex-[70%] bg-[#7ff5f5]
+    }
+    .message{
+        @apply relative flex w-full my-[5px] mx-0
+    }
+
+    .message p{
+        @apply relative left-0 text-left max-w-[65%] p-[12px]
+    }
+}
