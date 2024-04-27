@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    p{
+        @apply text-[16px] relative font-semibold
+    }
+
+    .left-container{
+        @apply relative flex-[30%] bg-[#fff]
+    }
+
+    .right-container{
+        @apply relative flex-[70%] bg-[#7ff5f5]
+    }
+    .message{
+        @apply relative inline-block my-[5px] mx-0 rounded-xl
+    }
+
+    .message p{
+        @apply relative left-0 text-left max-w-[65%] p-[12px]
+    }
+
+    .message_role{
+        @apply inline-block mx-4 rounded text-[12px]
+    }
+}
